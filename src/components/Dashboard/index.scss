@@ -1,0 +1,181 @@
+.mainDashboard {
+  width: 100%;
+  margin-top: 80px;
+  padding: 23px 40px;
+  background: #FCFCFF 0% 0% no-repeat padding-box;
+  box-sizing: border-box;
+  opacity: 1;
+
+  .mainContent {
+    h3.title {
+      text-align: left;
+      font: normal normal bold 24px/26px Proxima Nova;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 1;
+      line-height: 26px;
+      font-size: 24px;
+      font-family: 'Proxima Nova' !important;
+      font-weight: bold !important;
+      margin: 0 0 36px;
+    }
+
+    .bonusPeriod {
+      margin-bottom: 40px;
+      width: 100%;
+      display: inline-flex;
+
+      h3 {
+        text-align: left;
+        font: normal normal normal 17px/21px Proxima Nova;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 0.3;
+        margin: 0;
+        width: calc(100% - 152px);
+      }
+
+      .times {
+        width: 152px;
+
+        .totalTime {
+          text-align: center;
+          font: normal normal 600 15px/18px Proxima Nova;
+          letter-spacing: 0px;
+          color: #FFAA00;
+          opacity: 1;
+          padding: 7px 10px;
+          background: #E5E5E5 0% 0% no-repeat padding-box;
+          border-radius: 16px;
+          font-size: 15px;
+          line-height: 18px;
+          font-weight: 400;
+        }
+
+        .lastTime {
+          text-align: left;
+          font: normal normal normal 15px/18px Proxima Nova;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 1;
+          font-weight: 400;
+          margin-left: 26px;
+        }
+      }
+    }
+
+    .viewChart {
+      height: 320px;
+      // border: 1px solid #ddd;
+      width: 100%;
+    }
+
+    .status {
+      width: 100%;
+      position: relative;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      box-shadow: 0px 5px 10px #0000000D;
+      border-radius: 16px;
+      opacity: 1;
+      padding: 26px 28px;
+      box-sizing: border-box;
+      margin-top: 27.5px;
+
+      h4 {
+        text-align: left;
+        font: normal normal 600 15px/18px Proxima Nova;
+        letter-spacing: 0px;
+        color: #5856D6;
+        opacity: 1;
+        font-size: 15px;
+        margin: 0 0 5px;
+      }
+
+      p {
+        text-align: left;
+        font: normal normal normal 17px/21px Proxima Nova;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        font-size: 17px;
+        margin: 0 0 10px;
+      }
+
+      .info {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 10px;
+
+        h5 {
+          text-align: left;
+          font: normal normal 600 17px/21px Proxima Nova;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 1;
+          font-size: 17px;
+          margin: 0;
+        }
+
+        p {
+          text-align: left;
+          font: normal normal 300 15px/18px Proxima Nova;
+          letter-spacing: 0px;
+          color: #000000;
+          opacity: 0.3;
+          margin: 0;
+        }
+
+        .infoLeft {
+          text-align: left;
+          width: 50%;
+          float: left;
+        }
+
+        .infoRight {
+          text-align: right;
+          width: 50%;
+          float: right;
+
+          h5,
+          p {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 991px) {
+  .mainDashboard {
+    .mainContent {
+      .viewChart {
+        .recharts-responsive-container {
+          .recharts-wrapper, svg {
+            width: 100% !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 767) {
+  .mainDashboard {
+    .mainContent {
+      .viewChart {
+        height: 270px;
+      }
+    }
+  }
+}
+
+@media(max-width: 625px) {
+  .mainDashboard {
+    .mainContent {
+      .viewChart {
+        height: 240px;
+      }
+    }
+  }
+}

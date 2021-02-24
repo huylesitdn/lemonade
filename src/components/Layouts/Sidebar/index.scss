@@ -1,0 +1,101 @@
+.navBar {
+  .drawerHeader {
+    .logo {
+      padding: 12px 24px;
+
+      a {
+        display: inline-flex;
+        width: 56px;
+        height: 56px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #00000014;
+        border-radius: 16px;
+        opacity: 1;
+        align-items: center;
+        align-content: center;
+
+        img {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .menu {
+      height: calc(100vh - 81px);
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      ul {
+        width: 100%;
+      }
+
+      .menuItem {
+        padding: 0 24px;
+        margin: 21px 0;
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+
+        .MuiListItemIcon-root {
+          width: auto;
+          min-width: 20px !important;
+          margin-right: 10px;
+        }
+
+        .MuiListItemText-root {
+          text-align: left;
+          font: normal normal 600 17px/21px Proxima Nova;
+          letter-spacing: 0px;
+          color: #000;
+          opacity: 1;
+          font-size: 17px;
+        }
+      }
+
+      .active {
+        color: #FFAA00;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  .navBar{
+    width: 200px !important;
+    .MuiDrawer-paperAnchorLeft{
+      width: 200px;
+    }
+    .drawerHeader{
+      .logo{
+        padding: 8px 15px;
+        a{
+          width: 45px;
+          height: 45px;
+          img{
+            width: 25px;
+          height: 25px;
+          }
+        }
+      }
+
+      .menu{
+        .menuItem{
+          padding: 0 15px;
+          margin: 12px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 960px){
+  .navBar{
+    display: none;
+  }
+  .drawerHeader{
+    .logo{
+      padding: 10px 15px;
+    }
+  }
+}
