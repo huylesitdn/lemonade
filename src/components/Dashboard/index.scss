@@ -9,13 +9,13 @@
   .mainContent {
     h3.title {
       text-align: left;
-      font: normal normal bold 24px/26px Proxima Nova;
+      font: normal normal bold 24px/26px 'proxima-nova';
       letter-spacing: 0px;
       color: #000000;
       opacity: 1;
       line-height: 26px;
       font-size: 24px;
-      font-family: 'Proxima Nova' !important;
+      font-family: 'proxima-nova' !important;
       font-weight: bold !important;
       margin: 0 0 36px;
     }
@@ -27,20 +27,20 @@
 
       h3 {
         text-align: left;
-        font: normal normal normal 17px/21px Proxima Nova;
+        font: normal normal normal 17px/21px 'proxima-nova';
         letter-spacing: 0px;
         color: #000000;
         opacity: 0.3;
         margin: 0;
-        width: calc(100% - 152px);
+        width: calc(100% - 160px);
       }
 
       .times {
-        width: 152px;
+        width: 160px;
 
         .totalTime {
           text-align: center;
-          font: normal normal 600 15px/18px Proxima Nova;
+          font: normal normal 600 15px/18px 'proxima-nova';
           letter-spacing: 0px;
           color: #FFAA00;
           opacity: 1;
@@ -54,7 +54,7 @@
 
         .lastTime {
           text-align: left;
-          font: normal normal normal 15px/18px Proxima Nova;
+          font: normal normal normal 15px/18px 'proxima-nova';
           letter-spacing: 0px;
           color: #000000;
           opacity: 1;
@@ -83,7 +83,7 @@
 
       h4 {
         text-align: left;
-        font: normal normal 600 15px/18px Proxima Nova;
+        font: normal normal 600 15px/18px 'proxima-nova';
         letter-spacing: 0px;
         color: #5856D6;
         opacity: 1;
@@ -93,7 +93,7 @@
 
       p {
         text-align: left;
-        font: normal normal normal 17px/21px Proxima Nova;
+        font: normal normal normal 17px/21px 'proxima-nova';
         letter-spacing: 0px;
         color: #000000;
         opacity: 1;
@@ -108,7 +108,7 @@
 
         h5 {
           text-align: left;
-          font: normal normal 600 17px/21px Proxima Nova;
+          font: normal normal 600 17px/21px 'proxima-nova';
           letter-spacing: 0px;
           color: #000000;
           opacity: 1;
@@ -118,7 +118,7 @@
 
         p {
           text-align: left;
-          font: normal normal 300 15px/18px Proxima Nova;
+          font: normal normal 300 15px/18px 'proxima-nova';
           letter-spacing: 0px;
           color: #000000;
           opacity: 0.3;

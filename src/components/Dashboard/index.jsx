@@ -13,6 +13,7 @@ import { LinearProgressCustom } from "../common/Progress";
 import Wallets from "./Wallets";
 import LatestTransactions from "./LatestTransactions";
 import Charts from "./Charts";
+import LineChart from "./GoogleCharts/LineChart";
 
 const drawerWidth = 260;
 
@@ -80,7 +81,7 @@ const DashboardLayout = (props) => {
       <main className="mainDashboard">
         <div className="mainContent">
           <Grid container spacing={4}>
-            <Grid item lg={7}>
+            <Grid item sm={7}>
               <h3 className="title">
                 First token sell of Jigstack! Premier Ethereum network assets of
                 2021
@@ -113,11 +114,13 @@ const DashboardLayout = (props) => {
                 </div>
               </div>
             </Grid>
-            <Grid item lg={5}>
+            <Grid item sm={5}>
               <Wallets />
               <LatestTransactions />
             </Grid>
           </Grid>
+
+          {/* <LineChart /> */}
         </div>
       </main>
     </div>

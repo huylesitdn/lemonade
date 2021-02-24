@@ -1,43 +1,68 @@
 import React from "react";
 import "./index.scss";
+
 import {
   LineChart,
   Line,
+  XAxis,
   YAxis,
   Tooltip,
+  Legend,
   ResponsiveContainer,
 } from "recharts";
 
 const data = [
   {
+    name: "Page A",
     eth: 4000,
-    date: "Jan 28, 2021",
+    pv: 2400,
+    amt: 2400,
   },
   {
+    name: "Page B",
     eth: 3000,
-    date: "Jan 28, 2021",
+    pv: 1398,
+    amt: 2210,
   },
   {
+    name: "Page C",
     eth: 2000,
-    date: "Jan 28, 2021",
+    pv: 9800,
+    amt: 2290,
   },
   {
+    name: "Page D",
     eth: 2780,
-    date: "Jan 28, 2021",
+    pv: 3908,
+    amt: 2000,
   },
   {
+    name: "Page E",
     eth: 1890,
-    date: "Jan 28, 2021",
+    pv: 4800,
+    amt: 2181,
   },
   {
+    name: "Page F",
     eth: 2390,
-    date: "Jan 28, 2021",
+    pv: 3800,
+    amt: 2500,
   },
   {
+    name: "Page G",
     eth: 3490,
-    date: "Jan 28, 2021",
+    pv: 4300,
+    amt: 2100,
   },
 ];
+
+const CustomDot = (props) => {
+  return (
+    <div className="point">
+      <div className="dot" />
+    </div>
+  );
+};
 
 const Charts = (props) => {
   return (
@@ -53,16 +78,26 @@ const Charts = (props) => {
           bottom: 5,
         }}
       >
-        {/* <CartesianGrid strokeDasharray="3 3" /> */}
-        <YAxis />
+        <XAxis dataKey="name" />
+        {/* <YAxis yAxisId="left" /> */}
+        <YAxis yAxisId="right" orientation="right" />
         <Tooltip />
-        {/* <Legend /> */}
-        <Line type="monotone" dataKey="eth" stroke="#5856D6" />
-        <Line
+        <Legend />
+        {/* <Line
+          yAxisId="left"
           type="monotone"
-          dataKey="date"
-          stroke="green"
+          dataKey="pv"
+          stroke="#8884d8"
           activeDot={{ r: 8 }}
+        /> */}
+        <Line
+          yAxisId="right"
+          type="monotone"
+          dataKey="eth"
+          stroke="#5856D6"
+          activeDot={{ r: 8 }}
+          dot={{ r: 6 }}
+          // dot={<CustomDot />}
         />
       </LineChart>
     </ResponsiveContainer>

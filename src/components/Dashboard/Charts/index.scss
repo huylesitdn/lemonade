@@ -1,0 +1,16 @@
+.point {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background: #5856D6 0% 0% no-repeat padding-box;
+  .dot {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    background: #5856D6 0% 0% no-repeat padding-box;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 50%;
+
+  }
+}
